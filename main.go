@@ -3,8 +3,8 @@ package main
 
 import "fmt"
 
-func Welcome() string {
-	return "Hello Welcome to my repository"
+func Welcome() {
+	fmt.Println("Hello Welcome to my repository")
 }
 
 type IRollFactory interface {
