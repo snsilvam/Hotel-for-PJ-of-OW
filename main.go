@@ -3,6 +3,10 @@ package main
 
 import "fmt"
 
+func Welcome() string {
+	return "Hello Welcome to my repository"
+}
+
 type IRollFactory interface {
 	SendRoll()
 	GetSenderRoll() ISenderRoll
@@ -70,9 +74,7 @@ func sendRoll(f IRollFactory) {
 func getMethod(f IRollFactory) {
 	fmt.Println(f.GetSenderRoll().GetSenderTypeRoll())
 }
-func Welcome() string {
-	return "Hello Welcome to my repository"
-}
+
 func main() {
 	supportFactory, _ := getRollFactory("Support")
 	//tankFactory, _ := getRollFactory("Tank")
